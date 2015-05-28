@@ -31,7 +31,7 @@ public class KafkaTopologytest {
         cluster.shutdown();
     }
 
-    public static class Bolt1 extends BaseBasicBolt {
+    static class Bolt1 extends BaseBasicBolt {
 
         public void execute(Tuple input, BasicOutputCollector collector) {
             try {
@@ -54,7 +54,7 @@ public class KafkaTopologytest {
         }
     }
 
-    public static class Bolt2 extends BaseBasicBolt {
+    static class Bolt2 extends BaseBasicBolt {
         Map<String, Integer> counts = new HashMap<String, Integer>();
 
 
